@@ -5,8 +5,13 @@
 
 class Motor {
 private:
-
+  float p; 
+  float i; 
+  float d; 
+  
 public:
+  bool adjustMotorPosition(float actual, float target); 
+  void zeroEncoder(); 
 
 };
 

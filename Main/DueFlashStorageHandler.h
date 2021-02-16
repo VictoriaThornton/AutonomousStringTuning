@@ -5,8 +5,11 @@
 
 class DueFlashStorageHandler {
 private:
+  int* lookupPointer;
 
 public:
+  float* getLookupData(int stringModule); 
+  float* writeLookupData(float* data); 
 
 };
 

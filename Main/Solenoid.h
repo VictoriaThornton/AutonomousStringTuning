@@ -7,7 +7,7 @@ class Solenoid {
 private:
 
 public:
-
+  void actuate(); 
 };
 
 #endif /* Solenoid_H_ */

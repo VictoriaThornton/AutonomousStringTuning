@@ -7,6 +7,7 @@ class Photoresistor {
 private:
 
 public:
+  float getFrequency(); 
 
 };
 

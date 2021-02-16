@@ -7,7 +7,7 @@ class LoadCell {
 private:
 
 public:
-
+  float getValue(); 
 };
 
 #endif /* LoadCell_H_ */
