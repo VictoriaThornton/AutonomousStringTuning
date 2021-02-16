@@ -9,7 +9,7 @@ private:
   float* lookupTable; 
 
 public:
-  void createLookupTable(StringModule::Note startingNote, StringModule::Note endingNote);
+  //void createLookupTable(StringModule::Note startingNote, StringModule::Note endingNote);
   void setLookupTable(float* data);
   //float getLookupTension(StringModule::Note note);
   float* getLookupTableData();
