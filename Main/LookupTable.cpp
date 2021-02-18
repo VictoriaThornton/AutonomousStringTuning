@@ -1,7 +1,7 @@
 /**/
 
 #include "LookupTable.h"
-
+#include "StringModule.h"
 
 void createLookupTable(StringModule::Note startingNote, StringModule::Note endingNote){
  

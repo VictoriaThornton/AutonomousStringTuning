@@ -15,7 +15,7 @@ private:
     LoadCell loadCell; 
     Photoresistor photoresistor; 
     Solenoid solenoid; 
-//    LookupTable lookupTable; 
+    LookupTable lookupTable;  
   
 public:    
     enum Note{}; 

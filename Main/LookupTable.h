@@ -2,18 +2,17 @@
 
 #ifndef LookupTable_H_
 #define LookupTable_H_
-#include "StringModule.h"
 
 class LookupTable {
 private:
-  float* lookupTable; 
+  float* lookupData; 
 
-public:
-  //void createLookupTable(StringModule::Note startingNote, StringModule::Note endingNote);
+public: 
+  //void createLookupTable(Note startingNote, Note endingNote);
   void setLookupTable(float* data);
-  //float getLookupTension(StringModule::Note note);
+  //float getLookupTension(Note note);
   float* getLookupTableData();
-  //void adjustLookupTable(StringModule::Note note, float val); 
+  //void adjustLookupTable(Note note, float val); 
 
 };
 
