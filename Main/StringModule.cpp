@@ -2,26 +2,26 @@
 
 #include "StringModule.h"
 
-    void initialize(){
+    void StringModule::initialize(){
       
     }
     
-    void tuneString(StringModule::Note note){
+    void StringModule::tuneString(StringModule::Note note){
       
     } 
     
-    void pluckString(){
+    void StringModule::pluckString(){
       
     }
      
-    void setTableData(float* data){
+    void StringModule::setTableData(float* data){
       
     }
      
-    float* getTableData(){
+    float* StringModule::getTableData(){
       
     }
      
-    bool stringPlucked(){
-    
+    bool StringModule::stringPlucked(){
+      return false; 
     } 

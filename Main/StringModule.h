@@ -17,7 +17,8 @@ private:
     Solenoid solenoid; 
     LookupTable lookupTable;  
   
-public:    
+public:
+    
     enum Note{}; 
     void initialize(); 
     void tuneString(Note note); 

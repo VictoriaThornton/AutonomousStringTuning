@@ -3,6 +3,6 @@
 #include "UI.h"
 
 
-  StringModule::Note getTuning(){
+  StringModule::Note UI::getTuning(){
     
   }
