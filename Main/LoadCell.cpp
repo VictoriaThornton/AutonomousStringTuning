@@ -13,7 +13,7 @@ long zero_factor = 9.9; //determined experimentally
 /*
  * Return the tension value from the Load Cell
  */
-float getValue(){
+float LoadCell::getValue(){
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
   scale.set_scale();
 

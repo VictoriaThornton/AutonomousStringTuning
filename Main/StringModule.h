@@ -21,7 +21,7 @@ public:
     
     enum Note{}; 
     void initialize(); 
-    void tuneString(Note note); 
+    void tuneString(float noteFrequency); 
     void pluckString(); 
     void setTableData(float* data); 
     float* getTableData(); 

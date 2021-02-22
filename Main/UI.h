@@ -8,7 +8,8 @@ class UI {
 private:
 
 public:
-  StringModule::Note getTuning();
+    float getTuning(); 
+  //float* getTuning();
 
 };
 

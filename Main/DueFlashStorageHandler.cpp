@@ -2,10 +2,10 @@
 
 #include "DueFlashStorageHandler.h"
 
-float* getLookupData(int stringModule){
+float* DueFlashStorageHandler::getLookupData(int stringModule){
   
 } 
   
-float* writeLookupData(float* data){
+float* DueFlashStorageHandler::writeLookupData(float* data){
  
 } 

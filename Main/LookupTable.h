@@ -8,11 +8,11 @@ private:
   float* lookupData; 
 
 public: 
-  //void createLookupTable(Note startingNote, Note endingNote);
+  void createLookupTable(float startingNote, float endingNote);
   void setLookupTable(float* data);
-  //float getLookupTension(Note note);
+  float getLookupTension(float note);
   float* getLookupTableData();
-  //void adjustLookupTable(Note note, float val); 
+  void adjustLookupTable(float note, float val); 
 
 };
 

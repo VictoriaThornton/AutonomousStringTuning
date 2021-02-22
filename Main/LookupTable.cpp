@@ -3,22 +3,22 @@
 #include "LookupTable.h"
 #include "StringModule.h"
 
-void createLookupTable(StringModule::Note startingNote, StringModule::Note endingNote){
+void LookupTable::createLookupTable(float startingNote, float endingNote){
  
 }
 
-void setLookupTable(float* data){
+void LookupTable::setLookupTable(float* data){
   
 }
 
-float getLookupTension(StringModule::Note note){
+float LookupTable::getLookupTension(float note){
   
 }
 
-float* getLookupTableData(){
+float* LookupTable::getLookupTableData(){
   
 }
 
-void adjustLookupTable(StringModule::Note note, float val){
+void LookupTable::adjustLookupTable(float note, float val){
   
 }

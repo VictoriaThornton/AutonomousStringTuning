@@ -2,6 +2,6 @@
 
 #include "Photoresistor.h"
 
-  float getFrequency(){
+  float Photoresistor::getFrequency(){
   
   }

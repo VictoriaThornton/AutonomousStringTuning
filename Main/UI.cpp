@@ -1,8 +1,12 @@
+#include <HardwareSerial.h>
+
 /**/
 
 #include "UI.h"
+ float userInput; 
+ //float* userInput; 
 
-
-  StringModule::Note UI::getTuning(){
-    
+  float UI::getTuning(){
+        userInput = Serial.parseFloat();
+        return userInput; 
   }

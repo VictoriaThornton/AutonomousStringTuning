@@ -9,6 +9,7 @@ UI userInterface;
 DueFlashStorageHandler storage; 
 enum State{INITIALIZATION = 1, SELECTION = 2, CALIBRATION = 3}; 
 State state;
+float userTuning = 0; 
  
 void setup() {
   state = INITIALIZATION; 
@@ -19,13 +20,11 @@ void loop() {
 
   switch(state){
     case INITIALIZATION:
-      initializationState();
-      state = SELECTION; 
+      initializationState(); 
       break;
        
     case SELECTION:
-      selectionState();
-      state = CALIBRATION; 
+      selectionState(); 
       break;
        
     case CALIBRATION:
@@ -47,23 +46,31 @@ void initializationState(){
   
   for(int i = 0; i < arraySize; i++){ 
     stringModules[i].initialize(); 
-    Serial.print("String plucked?: "); 
-    Serial.println(stringModules[i].stringPlucked()); 
-  } 
+  }
+
+  state = SELECTION;
+  Serial.println("Type in a frequency: ");  
 }
 
 /*
  * Get the tuning that the user selected
  */
 void selectionState(){
-  Serial.println("selection state"); 
-  userInterface.getTuning(); 
-}
+  //Serial.println("selection state");  
+
+  if(Serial.available()){
+    userTuning = userInterface.getTuning();
+    Serial.println("You typed: "); 
+    Serial.println(userTuning); 
+    state = CALIBRATION; 
+  }
+  
+  }
 
 /*
  * Do the tuning and correct the lookup table based on the photoresistor reading if needed
  */
 void calibrationState(){
   Serial.println("calibration state");
-  //stringModules[0].tuneString(note);  
+  stringModules[0].tuneString(userTuning); 
 }

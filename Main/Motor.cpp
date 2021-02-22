@@ -2,10 +2,10 @@
 
 #include "Motor.h"
 
-  bool adjustMotorPosition(float actual, float target){
+  bool Motor::adjustMotorPosition(float actual, float target){
     
   }
   
-  void zeroEncoder(){
+  void Motor::zeroEncoder(){
     
   } 

@@ -2,6 +2,6 @@
 
 #include "Solenoid.h"
 
-  void actuate(){
+  void Solenoid::actuate(){
     
   }
