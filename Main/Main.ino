@@ -3,13 +3,16 @@
 #include "UI.h"
 #include "DueFlashStorageHandler.h"
 
+#define TONE_PITCH 440
+#include <Pitch.h>
+
 StringModule stringModules[1]; 
  
 UI userInterface; 
 DueFlashStorageHandler storage; 
 enum State{INITIALIZATION = 1, SELECTION = 2, CALIBRATION = 3}; 
 State state;
-float userTuning = 0; 
+float userTuning; 
  
 void setup() {
   state = INITIALIZATION; 
@@ -42,11 +45,11 @@ void loop() {
  */
 void initializationState(){
   Serial.println("initialization state");
-  int arraySize = (sizeof(stringModules)/sizeof(stringModules[0])); 
-  
-  for(int i = 0; i < arraySize; i++){ 
-    stringModules[i].initialize(); 
-  }
+
+  float stringNoteRange[] = {NOTE_D2}; 
+  int numNotes = (sizeof(stringNoteRange)/sizeof(stringNoteRange[0]));
+  stringModules[0].initialize();
+  stringModules[0].createTableData(stringNoteRange, numNotes); //create the lookup table for the string module  
 
   state = SELECTION;
   Serial.println("Type in a frequency: ");  
@@ -56,7 +59,6 @@ void initializationState(){
  * Get the tuning that the user selected
  */
 void selectionState(){
-  //Serial.println("selection state");  
 
   if(Serial.available()){
     userTuning = userInterface.getTuning();
@@ -65,7 +67,7 @@ void selectionState(){
     state = CALIBRATION; 
   }
   
-  }
+}
 
 /*
  * Do the tuning and correct the lookup table based on the photoresistor reading if needed

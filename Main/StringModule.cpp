@@ -18,6 +18,10 @@
     void StringModule::pluckString(){
       solenoid.actuate(); 
     }
+
+    void StringModule::createTableData(float* noteRange, int numNotes){
+      lookupTable.createLookupTable(noteRange, numNotes);   
+    } 
      
     void StringModule::setTableData(float* data){
   
