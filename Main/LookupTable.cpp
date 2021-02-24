@@ -28,7 +28,7 @@ void LookupTable::setLookupTable(float* data) {
 }
 
 float LookupTable::getLookupTension(float note) {
-
+  return lookupData[note]; 
 }
 
 float* LookupTable::getLookupTableData() {
@@ -36,7 +36,7 @@ float* LookupTable::getLookupTableData() {
 }
 
 void LookupTable::adjustLookupTable(float note, float val) {
-
+   lookupData[note] = val; 
 }
 
 /*

@@ -7,6 +7,7 @@ class LoadCell {
 private:
 
 public:
+  void initialize(int LOADCELL_DOUT_PIN, int LOADCELL_SCK_PIN); 
   float getValue(); 
 };
 

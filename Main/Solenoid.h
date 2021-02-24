@@ -7,6 +7,7 @@ class Solenoid {
 private:
 
 public:
+  void initialize(int SOLENOID_PIN);
   void actuate(); 
 };
 

@@ -1,8 +1,9 @@
-#include <HardwareSerial.h>
-
 /**/
 
 #include "UI.h"
+#include <HardwareSerial.h>
+#include <Arduino.h>
+
  float userInput; 
  //float* userInput; 
 
