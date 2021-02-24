@@ -40,7 +40,7 @@
     myPID.SetMode(AUTOMATIC);
     myPID.SetSampleTime(1);
     myPID.SetOutputLimits(-255,255);          //-255, 255
-    Serial.begin (115200);                              // for debugging
+    Serial.begin (9600);                              // for debugging
     Serial.println("Time,Input Angle,Setpoint,EncoderPos,Output Angle,"); //Time,
   }   
 

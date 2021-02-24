@@ -14,8 +14,8 @@ enum State{INITIALIZATION = 1, SELECTION = 2, CALIBRATION = 3};
 State state;
 float userTuning; 
 
-int LOADCELL_DOUT_PIN;  
-int LOADCELL_SCK_PIN;  
+int LOADCELL_DOUT_PIN = 3;  
+int LOADCELL_SCK_PIN = 2;  
 int SOLENOID_PIN;
 int ENC_A1 = 2; 
 int ENC_B1 = 3; 
@@ -35,11 +35,11 @@ void loop() {
       break;
        
     case SELECTION:
-      selectionState(); 
+     selectionState(); 
       break;
        
     case CALIBRATION:
-      calibrationState(); 
+     calibrationState(); 
       break;
        
     default: 
@@ -82,7 +82,7 @@ void selectionState(){
  */
 void calibrationState(){
   Serial.println("calibration state");
-  stringModules[0].tuneString(userTuning); 
+  stringModules[0].tuneString(userTuning);    
   /*Commented lines for motor test below*/
   //double targetPosition = 80.2; 
   //stringModules[0].motor.adjustMotorPosition(targetPosition); 
