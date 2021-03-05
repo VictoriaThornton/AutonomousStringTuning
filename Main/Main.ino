@@ -17,10 +17,10 @@ float userTuning;
 int LOADCELL_DOUT_PIN = 3;  
 int LOADCELL_SCK_PIN = 2;  
 int SOLENOID_PIN;
-int ENC_A1 = 2; 
-int ENC_B1 = 3; 
-int M1 = 4;  
-int M2 = 5;  
+int ENC_A1 = 5; 
+int ENC_B1 = 4; 
+int M1 = 6;  
+int M2 = 7;  
  
 void setup() {
   state = INITIALIZATION; 
@@ -54,7 +54,7 @@ void loop() {
 void initializationState(){
   Serial.println("initialization state");
 
-  float stringNoteRange[] = {NOTE_D2, NOTE_F2, NOTE_E2}; 
+  float stringNoteRange[] = {NOTE_D3, NOTE_DS3, NOTE_E3, NOTE_F3, NOTE_FS3, NOTE_G3, NOTE_A3, NOTE_B3, NOTE_C4, NOTE_CS4, NOTE_D4}; 
   int numNotes = (sizeof(stringNoteRange)/sizeof(stringNoteRange[0]));
   stringModules[0].initialize(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN, SOLENOID_PIN, ENC_A1, ENC_B1, M1, M2);
   stringModules[0].createTableData(stringNoteRange, numNotes); //create the lookup table for the string module  
@@ -83,7 +83,4 @@ void selectionState(){
 void calibrationState(){
   Serial.println("calibration state");
   stringModules[0].tuneString(userTuning);    
-  /*Commented lines for motor test below*/
-  //double targetPosition = 80.2; 
-  //stringModules[0].motor.adjustMotorPosition(targetPosition); 
 }

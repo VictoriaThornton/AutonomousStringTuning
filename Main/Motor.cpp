@@ -78,7 +78,7 @@
     Serial.println(",");
   }
   
-  void Motor::zeroEncoder(){
+  void Motor::getEncoderPos(){
     
   } 
 
@@ -91,4 +91,12 @@
       analogWrite(M1, 0);
       analogWrite(M2, abs(out));                        // drive motor CCW
     }
+  }
+
+  bool Motor::adjustMotorToTension(LoadCell loadCell, float targetTension){
+    input = loadCell.getValue(); 
+    setpoint = targetTension; 
+    myPID.SetOutputLimits(-110,110);
+    output = myPID.Compute(); 
+    pwmOut(output); 
   }

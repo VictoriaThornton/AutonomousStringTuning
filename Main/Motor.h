@@ -3,6 +3,7 @@
 #ifndef Motor_H_
 #define Motor_H_
 
+#include "LoadCell.h"
 class Motor {
 private:
 
@@ -16,10 +17,10 @@ public:
   void initialize(int ENC_A1, int ENC_B1, int M1, int M2);
   //bool adjustMotorPosition(float actual, float target);    
   bool adjustMotorPosition(double target); 
-  void zeroEncoder(); 
+  void getEncoderPos(); 
   void pwmOut(int out); 
   //static void encoder(); 
-
+  bool adjustMotorToTension(LoadCell loadCell, float targetTension); 
 };
 
 #endif /* Motor_H_ */

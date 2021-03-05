@@ -1,7 +1,6 @@
 /**/
 //#include <DueFlashStorage.h>
 
-
 #include "DueFlashStorageHandler.h"
 
   float* DueFlashStorageHandler::getLookupData(int stringModule){

@@ -8,7 +8,6 @@
 
 HX711 scale;
 float calibration_factor = 12000.0; //determined during calibration with a known weight on the scale
-long zero_factor = 9.9; //determined experimentally
 
   void LoadCell::initialize(int LOADCELL_DOUT_PIN, int LOADCELL_SCK_PIN){
       scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
@@ -20,5 +19,5 @@ long zero_factor = 9.9; //determined experimentally
    */
   float LoadCell::getValue(){
     scale.set_scale(calibration_factor);
-    return scale.get_units() + zero_factor;  
+    return scale.get_units();  
   }

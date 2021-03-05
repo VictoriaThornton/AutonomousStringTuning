@@ -11,15 +11,13 @@
 
 class StringModule {
 private:
-
+    Motor motor;
     LoadCell loadCell; 
     Photoresistor photoresistor; 
     Solenoid solenoid; 
     LookupTable lookupTable;  
   
 public:
-    Motor motor; //public temporarily for testing
-
     enum Note{}; 
     void initialize(int LOADCELL_DOUT_PIN, int LOADCELL_SCK_PIN, int SOLENOID_PIN, int ENC_A1, int ENC_B1, int M1, int M2);
     void tuneString(float noteFrequency); 

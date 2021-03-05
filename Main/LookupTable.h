@@ -5,7 +5,7 @@
 
 class LookupTable {
 private: 
-  float unitWeight = .000496670; 
+  float unitWeight = 0.000234279; 
   float scaleLength = 25.5;
   float tension = 0; 
   
