@@ -70,9 +70,14 @@ void selectionState(){
 
   if(Serial.available()){
     userTuning = userInterface.getTuning();
-    Serial.println("You typed: "); 
+    Serial.println("User Input Frequency: "); 
     Serial.println(userTuning); 
     state = CALIBRATION; 
+  }
+
+  if(userInterface.getMidiInput() != -1){
+    userTuning = userInterface.getTuning();
+    state = CALIBRATION;    
   }
   
 }

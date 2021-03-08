@@ -7,7 +7,8 @@ class UI {
 private:
 
 public:
-    float getTuning(); 
+    float getTuning();
+    float getMidiInput(); 
   //float* getTuning();
 
 };
