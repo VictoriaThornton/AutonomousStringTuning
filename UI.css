@@ -1,0 +1,77 @@
+	@font-face { font-family: 'AvocadoSansThin-Regular'; src: url('fonts/Avocado Sans Thin.otf'); } 
+	
+	.st0{fill:#E2F0DB;}
+	.st1{fill:url(#slider-1-path_1_);}
+	.st2{fill:url(#slider-2-path_1_);}
+	.st3{fill:url(#slider-3-path_1_);}
+	.st4{fill:url(#slider-4-path_1_);}
+	.st5{fill:url(#slider-5-path_1_);}
+	.st6{fill:#231F20;}
+	.st7{font-family:'AvocadoSansThin-Regular';}
+	.st8{font-size:24px;}
+	.st9{fill:#110A0C;}
+	.st10{fill:#666464;}
+	.st11{font-size:18px;}
+	.st12{fill:url(#SVGID_1_);}
+	.st13{display:none;fill:#FFFFFF;}
+	.st14{font-family:'CaliforniaSunset-Regular-Regular';}
+	.st15{font-size:21px;}
+	.st16{fill:#FFFFFF;}
+	.st17{fill:#FAFAE4;stroke:#B7CDB5;stroke-miterlimit:10;}
+	.st18{fill:#303260;}
+	.st19{fill:none;stroke:url(#SVGID_2_);stroke-width:3;stroke-miterlimit:10;}
+	.st20{fill:none;stroke:url(#SVGID_3_);stroke-width:3;stroke-miterlimit:10;}
+	.st21{fill:url(#SVGID_4_);}
+
+	.st_playButton0{fill:#E2F0DB;}
+	.st_playButton1{fill:url(#SVGID_1_);}
+	.st_playButton2{fill:#FFFFFF;}
+	.st_playButton3{fill:url(#SVGID_2_);}
+	.st_playButton4{fill:url(#SVGID_3_);}
+	.st_playButton5{fill:url(#SVGID_4_);}
+	.st_playButton6{fill:url(#SVGID_5_);}
+	.st_playButton7{fill:url(#SVGID_6_);}
+	.st_playButton8{fill:url(#SVGID_7_);}
+	.st_playButton9{fill:url(#SVGID_8_);}
+	.st_playButton10{fill:url(#SVGID_9_);}
+	.st_playButton11{fill:url(#SVGID_10_);}
+	.st_playButton12{fill:url(#SVGID_11_);}
+	.st_playButton13{fill:url(#SVGID_12_);}
+	.st_playButton14{fill:url(#SVGID_13_);}
+	.st_playButton15{fill:url(#SVGID_14_);}
+	.st_playButton16{fill:url(#SVGID_15_);}
+	.st_playButton17{fill:url(#SVGID_16_);}
+	.st_playButton18{fill:url(#SVGID_17_);}
+	.st_playButton19{fill:url(#SVGID_18_);}
+	.st_playButton20{fill:url(#SVGID_19_);}
+	.st_playButton21{fill:url(#SVGID_20_);}
+	.st_playButton22{fill:url(#SVGID_21_);}
+	.st_playButton23{fill:url(#SVGID_22_);}
+	.st_playButton24{fill:url(#SVGID_23_);}
+	.st_playButton25{fill:url(#SVGID_24_);}
+	.st_playButton26{fill:url(#SVGID_25_);}
+	.st_playButton27{fill:#231F20;}
+	.st_playButton28{fill:url(#SVGID_26_);}
+	.st_playButton29{fill:url(#SVGID_27_);}
+	.st_playButton30{fill:url(#SVGID_28_);}
+	.st_playButton31{fill:url(#SVGID_29_);}
+	.st_playButton32{filter:url(#dropshadow2);}
+
+
+
+    .pure-g {
+        justify-content: center;
+        text-align: center;
+    }
+
+	body{
+	  background-color: #E2F0DB;
+	}
+
+	#play-button-pressed{
+		display: none; 
+	}
+
+	.cursor-4{
+		fill:#FFFFFF;
+	}
