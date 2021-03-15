@@ -1,8 +1,7 @@
 ## Usage
 
 ### Current Functionality: 
-* Select Note for String 4
-* Use default notes for the other strings
+* Select Notes for all 5 strings
 * Send notes to Arduino Due by pressing select tuning button
 
 ### Notes: 

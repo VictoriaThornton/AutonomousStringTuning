@@ -57,13 +57,6 @@
 	.st_playButton31{fill:url(#SVGID_29_);}
 	.st_playButton32{filter:url(#dropshadow2);}
 
-
-
-    .pure-g {
-        justify-content: center;
-        text-align: center;
-    }
-
 	body{
 	  background-color: #E2F0DB;
 	}
@@ -72,6 +65,19 @@
 		display: none; 
 	}
 
-	.cursor-4{
+	.expand {
+		opacity: 0; 
+	}
+
+	.cursor{
 		fill:#FFFFFF;
+		opacity: 0;
+	}
+
+	#chordRadioButton{
+		opacity: 0;
+	}
+
+	#customRadioButton{
+		opacity: 0;
 	}
