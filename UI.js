@@ -20,6 +20,13 @@ function selectNote(note, string){
     var displayNote = note + 1; //note + 1 corresponds to the displayed notes on the UI
     console.log("Selected note ", displayNote, "String:  ", string);
     document.getElementById("string"+string+"note"+displayNote).style.opacity = 100; 
+
+    // if(string == 3){
+    //     var noteNames = document.getElementsByClassName("noteNameString3"); 
+    //     for(var i = 0; i < noteNames.length; i++){
+    //         cursors[note].style = "text-size-adjust: 80%;"
+    //     }
+    // }
 }
 
 function chords(){} //have preset chord configurations to choose from
@@ -43,6 +50,8 @@ function clearCursors(){
 function selectTuningButtonPressed(){
     document.getElementById("play-button").style.display = "none";
     document.getElementById("play-button-pressed").style.display = "block"; 
+    document.getElementById("play-button-pressed").webkitTransform = "translateY(0.5px)"; 
+    document.getElementById("play-button-pressed").webkitTransform = "translateY(-0.5px)"; 
     
     //send MIDI tuning to Arduino
     for(var i = 0; i < chosenNotes.length; i++) {
@@ -81,7 +90,8 @@ function toggleDropdownDisplay(){
     if(dropdownState == 'collapsed'){
         var elements = document.getElementsByClassName('expand');
         for (var i=0;i<elements.length;i+=1){
-        elements[i].style.display = 'block';
+        elements[i].style.opacity = 100;
+        elements[i].style.display = "block"; 
         }
         dropdownState = 'expanded'; 
         return; 
@@ -90,11 +100,18 @@ function toggleDropdownDisplay(){
     if(dropdownState == 'expanded'){
         
         for (var i=0;i < elements.length;i+=1){
-            elements[i].style.display = 'none';
+          //  elements[i].style.display = 'none';
+          elements[i].style.opacity = 0;
+          elements[i].style.display = "none";         
         }
         dropdownState = 'collapsed';
         return; 
     }
+}
+
+function dropdownSelection(selection){
+    document.getElementById("first-drop-down-box-text").innerHTML = selection; 
+    toggleDropdownDisplay(); 
 }
 
 function actuateSolenoid(){

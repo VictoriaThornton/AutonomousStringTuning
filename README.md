@@ -1,7 +1,7 @@
 ## Usage
 
 ### Current Functionality: 
-* Select Notes for all 5 strings
+* Custom Mode: select notes for all 5 strings
 * Send notes to Arduino Due by pressing select tuning button
 
 ### Notes: 
