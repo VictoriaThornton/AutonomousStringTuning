@@ -1,10 +1,10 @@
 <html>
   <head>
-    <script src="webmidi"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
     <link rel="stylesheet" type="text/css" href="UI.css" />
     <script type="text/javascript" src="UI.js"></script>
   </head>
-  <body onload="init()">
+  <body onload="init();">
     <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -176,207 +176,292 @@
         </text>
         <g id="string-1-notes">
           <text
-            transform="matrix(1 0 0 1 205.7661 194.0999)"
-            class="st9 st7 st8"
+            transform="matrix(1 0 0 1 205.7661 189)"
+            class="st9 st7 st8 label-1 label"
+            id="string1noteLabel1"
           >
-            N1
+            Eb1
           </text>
-          <text transform="matrix(1 0 0 1 277.8662 189)" class="st10 st7 st11">
-            N2
+          <text
+            transform="matrix(1 0 0 1 277.8662 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel2"
+          >
+            E1
           </text>
-          <text transform="matrix(1 0 0 1 350.145 189)" class="st10 st7 st11">
-            N3
+          <text
+            transform="matrix(1 0 0 1 350.145 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel3"
+          >
+            F1
           </text>
-          <text transform="matrix(1 0 0 1 421.353 189)" class="st10 st7 st11">
-            N4
+          <text
+            transform="matrix(1 0 0 1 421.353 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel4"
+          >
+            Gb1
           </text>
-          <text transform="matrix(1 0 0 1 494.1812 189)" class="st10 st7 st11">
-            N5
+          <text
+            transform="matrix(1 0 0 1 494.1812 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel5"
+          >
+            G1
           </text>
-          <text transform="matrix(1 0 0 1 566.1362 189)" class="st10 st7 st11">
-            N6
+          <text
+            transform="matrix(1 0 0 1 566.1362 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel6"
+          >
+            Ab1
           </text>
-          <text transform="matrix(1 0 0 1 637.8931 189)" class="st10 st7 st11">
-            N7
+          <text
+            transform="matrix(1 0 0 1 637.8931 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel7"
+          >
+            A1
           </text>
-          <text transform="matrix(1 0 0 1 709.875 189)" class="st10 st7 st11">
-            N8
+          <text
+            transform="matrix(1 0 0 1 709.875 189)"
+            class="st10 st7 st11 label-1 label"
+            id="string1noteLabel8"
+          >
+            Bb1
           </text>
         </g>
         <g id="string-2-notes">
-          <text transform="matrix(1 0 0 1 208.2622 279)" class="st10 st7 st11">
-            N1
-          </text>
-          <text transform="matrix(1 0 0 1 277.8662 279)" class="st10 st7 st11">
-            N2
+          <text
+            transform="matrix(1 0 0 1 208.2622 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel1"
+          >
+            Bb1
           </text>
           <text
-            transform="matrix(1 0 0 1 346.8604 284.0999)"
-            class="st9 st7 st8"
+            transform="matrix(1 0 0 1 277.8662 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel2"
           >
-            N3
+            B1
           </text>
-          <text transform="matrix(1 0 0 1 421.353 279)" class="st10 st7 st11">
-            N4
+          <text
+            transform="matrix(1 0 0 1 346.8604 279)"
+            class="st9 st7 st8 label-2 label"
+            id="string2noteLabel3"
+          >
+            C2
           </text>
-          <text transform="matrix(1 0 0 1 494.1812 279)" class="st10 st7 st11">
-            N5
+          <text
+            transform="matrix(1 0 0 1 421.353 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel4"
+          >
+            Db2
           </text>
-          <text transform="matrix(1 0 0 1 566.1362 279)" class="st10 st7 st11">
-            N6
+          <text
+            transform="matrix(1 0 0 1 494.1812 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel5"
+          >
+            D2
           </text>
-          <text transform="matrix(1 0 0 1 637.8931 279)" class="st10 st7 st11">
-            N7
+          <text
+            transform="matrix(1 0 0 1 566.1362 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel6"
+          >
+            Eb2
           </text>
-          <text transform="matrix(1 0 0 1 709.875 279)" class="st10 st7 st11">
-            N8
+          <text
+            transform="matrix(1 0 0 1 637.8931 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel7"
+          >
+            E2
+          </text>
+          <text
+            transform="matrix(1 0 0 1 709.875 279)"
+            class="st10 st7 st11 label-2 label"
+            id="string2noteLabel8"
+          >
+            -
           </text>
         </g>
         <g id="string-3-notes">
           <text
             transform="matrix(1 0 0 1 208.2622 368.9999)"
-            class="st10 st7 st11 noteNameString3"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel1"
           >
-            N1
+            D2
           </text>
           <text
             transform="matrix(1 0 0 1 277.8662 368.9999)"
-            class="st10 st7 st11 noteNameString3"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel2"
           >
-            N2
+            Eb2
           </text>
           <text
             transform="matrix(1 0 0 1 350.145 368.9999)"
-            class="st10 st7 st11 noteNameString3"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel3"
           >
-            N3
+            E2
           </text>
           <text
             transform="matrix(1 0 0 1 421.353 368.9999)"
-            class="st10 st7 st11 noteNameString3"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel4"
           >
-            N4
+            F2
           </text>
           <text
-            transform="matrix(1 0 0 1 490.9082 374.1001)"
-            class="st9 st7 st8 noteNameString3"
+            transform="matrix(1 0 0 1 490.9082 368.9999)"
+            class="st9 st7 st8 label-3 label"
+            id="string3noteLabel5"
           >
-            N5
+            Gb2
           </text>
           <text
             transform="matrix(1 0 0 1 566.1362 368.9999)"
-            class="st10 st7 st11 noteNameString3"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel6"
           >
-            N6
+            G2
           </text>
           <text
             transform="matrix(1 0 0 1 637.8931 368.9999)"
-            class="st10 st7 st11 noteNameString3"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel7"
           >
-            N7
+            Ab2
           </text>
           <text
             transform="matrix(1 0 0 1 709.875 368.9999)"
-            class="st10 st7 st11 n8"
+            class="st10 st7 st11 label-3 label"
+            id="string3noteLabel8"
           >
-            N8
+            A2
           </text>
         </g>
         <g id="string-4-notes">
           <text
             transform="matrix(1 0 0 1 208.2622 458.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel1"
           >
-            A#2
+            A2
           </text>
           <text
             transform="matrix(1 0 0 1 277.8662 458.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel2"
+          >
+            Bb2
+          </text>
+          <text
+            transform="matrix(1 0 0 1 350.145 458.9999)"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel3"
           >
             B2
           </text>
           <text
-            transform="matrix(1 0 0 1 350.145 458.9999)"
-            class="st10 st7 st11"
+            transform="matrix(1 0 0 1 421.353 458.9999)"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel4"
           >
             C3
           </text>
           <text
-            transform="matrix(1 0 0 1 421.353 458.9999)"
-            class="st10 st7 st11"
+            transform="matrix(1 0 0 1 494.1812 458.9999)"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel5"
           >
-            C#3
+            Db3
           </text>
           <text
-            transform="matrix(1 0 0 1 494.1812 458.9999)"
-            class="st10 st7 st11"
+            transform="matrix(1 0 0 1 566.1362 458.9999)"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel6"
           >
             D3
           </text>
           <text
-            transform="matrix(1 0 0 1 566.1362 458.9999)"
-            class="st10 st7 st11"
+            transform="matrix(1 0 0 1 637.8931 458.9999)"
+            class="st10 st7 st11 label-4 label"
+            id="string4noteLabel7"
           >
-            D#3
+            -
           </text>
           <text
-            transform="matrix(1 0 0 1 637.8931 458.9999)"
-            class="st10 st7 st11"
+            transform="matrix(1 0 0 1 706.5 458.9999)"
+            class="st9 st7 st8 label-4 label"
+            id="string4noteLabel8"
           >
-            E3
-          </text>
-          <text transform="matrix(1 0 0 1 706.5 464.1003)" class="st9 st7 st8">
-            F3
+            -
           </text>
         </g>
         <g id="string-5-notes">
           <text
             transform="matrix(1 0 0 1 208.2622 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel1"
           >
-            N1
+            A2
           </text>
           <text
             transform="matrix(1 0 0 1 277.8662 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel2"
           >
-            N2
+            Bb2
           </text>
           <text
             transform="matrix(1 0 0 1 350.145 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel3"
           >
-            N3
+            B2
           </text>
           <text
             transform="matrix(1 0 0 1 421.353 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel4"
           >
-            N4
+            C3
           </text>
           <text
             transform="matrix(1 0 0 1 494.1812 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel5"
           >
-            N5
+            Db3
           </text>
           <text
             transform="matrix(1 0 0 1 566.1362 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel6"
           >
-            N6
+            D3
           </text>
           <text
-            transform="matrix(1 0 0 1 634.5244 554.1003)"
-            class="st9 st7 st8"
+            transform="matrix(1 0 0 1 634.5244 548.9999)"
+            class="st9 st7 st8 label-5 label"
+            id="string5noteLabel7"
           >
-            N7
+            -
           </text>
           <text
             transform="matrix(1 0 0 1 709.875 548.9999)"
-            class="st10 st7 st11"
+            class="st10 st7 st11 label-5 label"
+            id="string5noteLabel8"
           >
-            N8
+            -
           </text>
         </g>
       </g>
@@ -1408,11 +1493,20 @@
           d="M474.8,58.1l8.3,7.4c0.8,0.8,2.1,0.8,3,0l8.3-7.4c1.4-1.3,3.7-0.3,3.7,1.7v0
 		c0,0.6-0.3,1.3-0.8,1.7l-11.3,10c-0.8,0.8-2.1,0.8-3,0l-11.3-10c-0.5-0.4-0.8-1-0.8-1.7v0C471,57.8,473.3,56.8,474.8,58.1z"
         />
-        <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" id = "first-drop-down-box-text">
+        <text
+          transform="matrix(1 0 0 1 411.3574 72)"
+          class="st6 st7 st8"
+          id="first-drop-down-box-text"
+        >
           A
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 50)" onClick = "dropdownSelection('Am')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 50)"
+        onClick="dropdownSelection('Am')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1423,7 +1517,12 @@
           Am
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 100)" onClick = "dropdownSelection('B')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 100)"
+        onClick="dropdownSelection('B')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1434,7 +1533,12 @@
           B
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 150)" onClick = "dropdownSelection('Bm')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 150)"
+        onClick="dropdownSelection('Bm')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1445,7 +1549,12 @@
           Bm
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 200)" onClick = "dropdownSelection('C')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 200)"
+        onClick="dropdownSelection('C')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1456,7 +1565,12 @@
           C
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 250)" onClick = "dropdownSelection('Cm')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 250)"
+        onClick="dropdownSelection('Cm')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1467,7 +1581,12 @@
           Cm
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 300)" onClick = "dropdownSelection('D')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 300)"
+        onClick="dropdownSelection('D')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1490,7 +1609,12 @@
           Dm
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 400)" onClick = "dropdownSelection('E')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 400)"
+        onClick="dropdownSelection('E')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1501,7 +1625,12 @@
           E
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 450)" onClick = "dropdownSelection('Em')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 450)"
+        onClick="dropdownSelection('Em')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1512,7 +1641,12 @@
           Em
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 500)" onClick = "dropdownSelection('F')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 500)"
+        onClick="dropdownSelection('F')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1523,7 +1657,12 @@
           F
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 550)" onClick = "dropdownSelection('Fm')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 550)"
+        onClick="dropdownSelection('Fm')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1534,7 +1673,12 @@
           Fm
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 600)" onClick = "dropdownSelection('G')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 600)"
+        onClick="dropdownSelection('G')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1545,7 +1689,12 @@
           G
         </text>
       </g>
-      <g id="drop-down-box" class="expand" transform="translate(0 650)" onClick = "dropdownSelection('Gm')">
+      <g
+        id="drop-down-box"
+        class="expand"
+        transform="translate(0 650)"
+        onClick="dropdownSelection('Gm')"
+      >
         <path
           id="drop-down"
           class="st17"
@@ -1557,7 +1706,7 @@
         </text>
       </g>
 
-      <g id="radio-button-chords" onclick="selectMode('chord')">
+      <g onclick="selectMode('chord')">
         <linearGradient
           id="SVGID_3_"
           gradientUnits="userSpaceOnUse"
@@ -1587,9 +1736,9 @@
         />
       </g>
 
-      <g id="radio-button-custom"  onclick="selectMode('custom')">
+      <g onclick="selectMode('custom')">
         <linearGradient
-          id="SVGID_3_"
+          class="SVGID_3_"
           gradientUnits="userSpaceOnUse"
           x1="580.6086"
           y1="55.5754"
@@ -1606,7 +1755,7 @@
         <!-- outside circle -->
         <circle class="st20" cx="588" cy="63" r="9" />
         <linearGradient
-          id="SVGID_4_"
+          class="SVGID_4_"
           gradientUnits="userSpaceOnUse"
           x1="584.8512"
           y1="59.9704"
