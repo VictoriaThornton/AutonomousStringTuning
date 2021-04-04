@@ -47,7 +47,7 @@
   fill: url(#SVGID_1_);
 }
 .st13 {
-  display: none;
+  /* display: none; */
   fill: #ffffff;
 }
 .st14 {
@@ -64,9 +64,7 @@
   stroke: #b7cdb5;
   stroke-miterlimit: 10;
 }
-#drop-down.st17:hover {
-  fill: #e2f0db;
-}
+
 .st18 {
   fill: #303260;
 }
@@ -194,6 +192,10 @@ body {
   display: none;
 }
 
+#custom-notes-tab{
+  z-index: 10
+}
+
 .expand {
   opacity: 0;
 }
@@ -203,11 +205,7 @@ body {
   opacity: 0;
 }
 
-#chordRadioButton {
-  opacity: 0;
-}
-
-#customRadioButton {
+.radio {
   opacity: 0;
 }
 
@@ -231,4 +229,16 @@ svg text {
 }
 svg text::selection {
   background: none;
+}
+
+.tab_clickbox{
+  opacity: 0; 
+}
+
+#motorControlButtonBackgroundOn{
+  display: none;
+}
+
+#motorControlButtonOn{
+  display: none;
 }
