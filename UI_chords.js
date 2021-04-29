@@ -9,7 +9,7 @@ function init() {
 
   include('dev.js');
   radioSelect(1); //default radio selection = minor chord
-  //startDevice(); 
+  startDevice(); 
 
   //keypresses to actuate solenoids
   window.onkeypress = function (event) {

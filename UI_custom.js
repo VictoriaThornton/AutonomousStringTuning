@@ -6,7 +6,7 @@ var MotorState = 'off';
 function init() {
   chosenNotes = [0, 2, 4, 5, 4]; //default note values;
   include('dev.js');
-   //startDevice();  
+  startDevice();  
   clearCursors();
 
   document.getElementById("string1note1").style.opacity = 100;
