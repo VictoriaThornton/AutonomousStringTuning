@@ -9,7 +9,7 @@ function init() {
 
   include('dev.js');
   radioSelect(1); //default radio selection = minor chord
-  startDevice(); 
+  
 
   //keypresses to actuate solenoids
   window.onkeypress = function (event) {
@@ -78,8 +78,8 @@ function dropdownTextHighlight(dropdownBoxId, state) {
     document.getElementById("drop-down-" + dropdownBoxId).style.fill = '#fafae4';
   }
 
-
 }
+
 //saves the chordType and changes the appearance of the radio buttons
 function radioSelect(buttonNumber) {
   //reset cursor selections for current string
@@ -130,7 +130,7 @@ function selectTuningButtonPressed() {
   document.getElementById("play-button-pressed").style.display = "block";
   //button animation
   document.getElementById("play-button-pressed").className += " button-pressed";
-
+  startDevice(); //send start command to Node.js server 
   //send chord tuning over socket to Arduino
   sendChord(parseInt(chordRoot), parseInt(chordType));
 }
@@ -170,26 +170,6 @@ function toggleDropdownDisplay() {
 //1, 2, 3, 4, 5 to correspond to the different strings.
 //channel 6 corresponds to striking all of the strings at once
 function actuateSolenoid(stringNumber) {
-  // if (midiOutput) {
-  //     midiOutput.stopNote(10, stringNumber, { duration: 100, velocity: 0.5 });
-  // } else {
-  //     console.log(
-  //       "Looks like there is no MIDI output device. Check if your Arduino is connected."
-  //     );
-  //   }
   actuate(stringNumber);
 }
 
-// WebMidi.enable(function (err) {
-//   if (err) {
-//     console.log("WebMidi could not be enabled.", err);
-//   }
-
-//   // Print available MIDI outputs
-//   for (let i = 0; i < WebMidi.outputs.length; i++) {
-//     console.log(WebMidi.outputs[i].name);
-//   }
-
-//   // From the list on the console, pick an output name:
-//   midiOutput = WebMidi.getOutputByName("Arduino Due");
-// });

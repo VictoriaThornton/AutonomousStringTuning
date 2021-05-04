@@ -1,0 +1,19 @@
+{
+  "name": "autonomousstringtuning",
+  "version": "1.0.0",
+  "description": "* Custom Mode: select notes for all 5 strings\r * Chords Mode: select chord root from dropdown menu and chord type with radio buttons\r * On/Off switch to turn motor control on or off\r * Keypresses:\r     * keys 1, 2, 3, 4, or 5 actuate individual strings\r     * keys a or 6 actuate all strings at once \r     * s or S key shortcut to switch between tabs\r * Send notes to Arduino Due by pressing the select tuning button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictoriaThornton/AutonomousStringTuning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictoriaThornton/AutonomousStringTuning/issues"
+  },
+  "homepage": "https://github.com/VictoriaThornton/AutonomousStringTuning#readme"
+}
