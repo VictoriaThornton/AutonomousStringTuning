@@ -1,6 +1,6 @@
 var dropdownState = "collapsed";
 var chosenNotes;
-var MotorState = 'off'; 
+var MotorState = 'off';
 
 var chordType = 1; //minor by default 
 var chordRoot = 0; //C by default
@@ -9,7 +9,7 @@ function init() {
 
   include('dev.js');
   radioSelect(1); //default radio selection = minor chord
-  
+
 
   //keypresses to actuate solenoids
   window.onkeypress = function (event) {
@@ -49,6 +49,11 @@ function init() {
         //shortcut to switch tabs
         switchTuningMode();
         break;
+
+      case 'r': case 'R':
+        //shortcut to reset the tuning button
+        resetTuningButton(); 
+        break;
     }
   }
 }
@@ -56,7 +61,7 @@ function init() {
 function dropdownSelection(chord, chordRootNumber) {
   document.getElementById("first-drop-down-box-text").innerHTML = chord;
   toggleDropdownDisplay();
-  chordRoot = chordRootNumber; 
+  chordRoot = chordRootNumber;
 }
 
 function include(file) {
@@ -165,6 +170,11 @@ function toggleDropdownDisplay() {
   }
 }
 
+//reset tuning button to allow press again
+function resetTuningButton() {
+  document.getElementById("play-button").style.display = "block";
+  document.getElementById("play-button-pressed").style.display = "none";
+}
 
 //actuate the solenoid using keypresses for the different strings.
 //1, 2, 3, 4, 5 to correspond to the different strings.

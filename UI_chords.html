@@ -1,12 +1,10 @@
 <html>
   <head>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/webmidi"></script> -->
     <link rel="stylesheet" type="text/css" href="UI.css" />
     <script type="text/javascript" src="UI_chords.js"></script>
     <script type="text/javascript" src="dev.js"></script>
   </head>
   <body onload="init();">
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 -6 1790 184">
       <defs />
       <style>
@@ -663,28 +661,6 @@
             >
               Motor Control On/Off
             </text>
-            <!-- <g id="Off" onclick = "toggleMotorControlSwitch('off')" class="st1_chords">
-              <g class="st2_chords">
-                <linearGradient id="SVGID_42_customTab" gradientUnits="userSpaceOnUse" x1="1016.556" y1="111.482" x2="1067.591" y2="162.518">
-                  <stop offset="0" stop-color="#00a79d"/>
-                  <stop offset=".008" stop-color="#00a79d"/>
-                  <stop offset=".25" stop-color="#00a79d"/>
-                  <stop offset=".5" stop-color="#1b75bc"/>
-                  <stop offset=".75" stop-color="#2b3990"/>
-                  <stop offset="1" stop-color="#662d91"/>
-                </linearGradient>
-                <path d="M1060.62 117c11.03 0 20 8.97 20 20s-8.97 20-20 20h-37.1c-11.03 0-20-8.97-20-20s8.97-20 20-20h37.1m0-3h-37.1c-12.65 0-23 10.35-23 23s10.35 23 23 23h37.1c12.65 0 23-10.35 23-23s-10.35-23-23-23z" fill="url(#SVGID_42_customTab)"/>
-              </g>
-              <linearGradient id="SVGID_43_customTab" gradientUnits="userSpaceOnUse" x1="1010.409" y1="123.884" x2="1036.641" y2="150.116">
-                <stop offset="0" stop-color="#00a79d"/>
-                <stop offset=".008" stop-color="#00a79d"/>
-                <stop offset=".25" stop-color="#00a79d"/>
-                <stop offset=".5" stop-color="#1b75bc"/>
-                <stop offset=".75" stop-color="#2b3990"/>
-                <stop offset="1" stop-color="#662d91"/>
-              </linearGradient>
-              <circle cx="1023.53" cy="137" r="18.55" fill="url(#SVGID_43_customTab)"/>
-            </g> -->
 
             <g id="Off" onclick="toggleMotorControlSwitch('off')">
               <linearGradient
@@ -795,10 +771,9 @@
         <g>
           <g id="chords-screen">
             <g id="Layer_25">
-
-   <!-- Dropdown Menu -->
+              <!-- Dropdown Menu -->
               <g transform="translate(400.808 120.17) scale(0.76)">
-                <g id="first-drop-down-box" >
+                <g id="first-drop-down-box">
                   <path
                     id="drop-down-1"
                     onclick="toggleDropdownDisplay()"
@@ -807,11 +782,10 @@
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
                   <path
-                    
                     id="chord-select-down-arrow"
                     onclick="toggleDropdownDisplay()"
                     class="st18"
-                    transform = "scale(0.65) translate(265 30)"
+                    transform="scale(0.65) translate(265 30)"
                     d="M474.8,58.1l8.3,7.4c0.8,0.8,2.1,0.8,3,0l8.3-7.4c1.4-1.3,3.7-0.3,3.7,1.7v0
               c0,0.6-0.3,1.3-0.8,1.7l-11.3,10c-0.8,0.8-2.1,0.8-3,0l-11.3-10c-0.5-0.4-0.8-1-0.8-1.7v0C471,57.8,473.3,56.8,474.8,58.1z"
                   />
@@ -820,7 +794,7 @@
                     class="st6 st7 st8"
                     id="first-drop-down-box-text"
                   >
-                   C
+                    C
                   </text>
                 </g>
                 <!-- dropdown expand -->
@@ -829,14 +803,21 @@
                   class="expand drop-down"
                   transform="translate(0 50)"
                   onClick="dropdownSelection('C',0)"
-                  onmouseover="dropdownTextHighlight(2, 'over')" onmouseout="dropdownTextHighlight(2, 'out')">
+                  onmouseover="dropdownTextHighlight(2, 'over')"
+                  onmouseout="dropdownTextHighlight(2, 'out')"
+                >
                   <path
                     id="drop-down-2"
                     class="st17 drop-down"
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(2, 'over')" onmouseout="dropdownTextHighlight(2, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(2, 'over')"
+                    onmouseout="dropdownTextHighlight(2, 'out')"
+                  >
                     C
                   </text>
                 </g>
@@ -845,7 +826,8 @@
                   class="expand"
                   transform="translate(0 100)"
                   onClick="dropdownSelection('C#/Db',1)"
-                  onmouseover="dropdownTextHighlight(3, 'over')" onmouseout="dropdownTextHighlight(3, 'out')"
+                  onmouseover="dropdownTextHighlight(3, 'over')"
+                  onmouseout="dropdownTextHighlight(3, 'out')"
                 >
                   <path
                     id="drop-down-3"
@@ -853,7 +835,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(3, 'over')" onmouseout="dropdownTextHighlight(3, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(3, 'over')"
+                    onmouseout="dropdownTextHighlight(3, 'out')"
+                  >
                     C#/Db
                   </text>
                 </g>
@@ -862,7 +849,8 @@
                   class="expand"
                   transform="translate(0 150)"
                   onClick="dropdownSelection('D',2)"
-                  onmouseover="dropdownTextHighlight(4, 'over')" onmouseout="dropdownTextHighlight(4, 'out')"
+                  onmouseover="dropdownTextHighlight(4, 'over')"
+                  onmouseout="dropdownTextHighlight(4, 'out')"
                 >
                   <path
                     id="drop-down-4"
@@ -870,8 +858,13 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(4, 'over')" onmouseout="dropdownTextHighlight(4, 'out')">
-                   D
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(4, 'over')"
+                    onmouseout="dropdownTextHighlight(4, 'out')"
+                  >
+                    D
                   </text>
                 </g>
                 <g
@@ -879,7 +872,8 @@
                   class="expand"
                   transform="translate(0 200)"
                   onClick="dropdownSelection('D#/Eb',3)"
-                  onmouseover="dropdownTextHighlight(5, 'over')" onmouseout="dropdownTextHighlight(5, 'out')"
+                  onmouseover="dropdownTextHighlight(5, 'over')"
+                  onmouseout="dropdownTextHighlight(5, 'out')"
                 >
                   <path
                     id="drop-down-5"
@@ -887,7 +881,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(5, 'over')" onmouseout="dropdownTextHighlight(5, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(5, 'over')"
+                    onmouseout="dropdownTextHighlight(5, 'out')"
+                  >
                     D#/Eb
                   </text>
                 </g>
@@ -896,7 +895,8 @@
                   class="expand"
                   transform="translate(0 250)"
                   onClick="dropdownSelection('E',4)"
-                  onmouseover="dropdownTextHighlight(6, 'over')" onmouseout="dropdownTextHighlight(6, 'out')"
+                  onmouseover="dropdownTextHighlight(6, 'over')"
+                  onmouseout="dropdownTextHighlight(6, 'out')"
                 >
                   <path
                     id="drop-down-6"
@@ -904,7 +904,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(6, 'over')" onmouseout="dropdownTextHighlight(6, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(6, 'over')"
+                    onmouseout="dropdownTextHighlight(6, 'out')"
+                  >
                     E
                   </text>
                 </g>
@@ -913,7 +918,8 @@
                   class="expand"
                   transform="translate(0 300)"
                   onClick="dropdownSelection('F',5)"
-                  onmouseover="dropdownTextHighlight(7, 'over')" onmouseout="dropdownTextHighlight(7, 'out')"
+                  onmouseover="dropdownTextHighlight(7, 'over')"
+                  onmouseout="dropdownTextHighlight(7, 'out')"
                 >
                   <path
                     id="drop-down-7"
@@ -921,21 +927,36 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(7, 'over')" onmouseout="dropdownTextHighlight(7, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(7, 'over')"
+                    onmouseout="dropdownTextHighlight(7, 'out')"
+                  >
                     F
                   </text>
                 </g>
-          
-                <g id="drop-down-box" class="expand" transform="translate(0 350)"
-                onClick="dropdownSelection('F#/Gb',6)"
-                onmouseover="dropdownTextHighlight(8, 'over')" onmouseout="dropdownTextHighlight(8, 'out')">
+
+                <g
+                  id="drop-down-box"
+                  class="expand"
+                  transform="translate(0 350)"
+                  onClick="dropdownSelection('F#/Gb',6)"
+                  onmouseover="dropdownTextHighlight(8, 'over')"
+                  onmouseout="dropdownTextHighlight(8, 'out')"
+                >
                   <path
                     id="drop-down-8"
                     class="st17 drop-down"
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(8, 'over')" onmouseout="dropdownTextHighlight(8, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(8, 'over')"
+                    onmouseout="dropdownTextHighlight(8, 'out')"
+                  >
                     F#/Gb
                   </text>
                 </g>
@@ -944,7 +965,8 @@
                   class="expand"
                   transform="translate(0 400)"
                   onClick="dropdownSelection('G',7)"
-                  onmouseover="dropdownTextHighlight(9, 'over')" onmouseout="dropdownTextHighlight(9, 'out')"
+                  onmouseover="dropdownTextHighlight(9, 'over')"
+                  onmouseout="dropdownTextHighlight(9, 'out')"
                 >
                   <path
                     id="drop-down-9"
@@ -952,7 +974,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(9, 'over')" onmouseout="dropdownTextHighlight(9, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(9, 'over')"
+                    onmouseout="dropdownTextHighlight(9, 'out')"
+                  >
                     G
                   </text>
                 </g>
@@ -961,7 +988,8 @@
                   class="expand"
                   transform="translate(0 450)"
                   onClick="dropdownSelection('G#/Ab',8)"
-                  onmouseover="dropdownTextHighlight(10, 'over')" onmouseout="dropdownTextHighlight(10, 'out')"
+                  onmouseover="dropdownTextHighlight(10, 'over')"
+                  onmouseout="dropdownTextHighlight(10, 'out')"
                 >
                   <path
                     id="drop-down-10"
@@ -969,7 +997,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(10, 'over')" onmouseout="dropdownTextHighlight(10, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(10, 'over')"
+                    onmouseout="dropdownTextHighlight(10, 'out')"
+                  >
                     G#/Ab
                   </text>
                 </g>
@@ -978,7 +1011,8 @@
                   class="expand"
                   transform="translate(0 500)"
                   onClick="dropdownSelection('A',9)"
-                  onmouseover="dropdownTextHighlight(11, 'over')" onmouseout="dropdownTextHighlight(11, 'out')"
+                  onmouseover="dropdownTextHighlight(11, 'over')"
+                  onmouseout="dropdownTextHighlight(11, 'out')"
                 >
                   <path
                     id="drop-down-11"
@@ -986,7 +1020,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(11, 'over')" onmouseout="dropdownTextHighlight(11, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(11, 'over')"
+                    onmouseout="dropdownTextHighlight(11, 'out')"
+                  >
                     A
                   </text>
                 </g>
@@ -995,7 +1034,8 @@
                   class="expand"
                   transform="translate(0 550)"
                   onClick="dropdownSelection('A#/Bb',10)"
-                  onmouseover="dropdownTextHighlight(12, 'over')" onmouseout="dropdownTextHighlight(12, 'out')"
+                  onmouseover="dropdownTextHighlight(12, 'over')"
+                  onmouseout="dropdownTextHighlight(12, 'out')"
                 >
                   <path
                     id="drop-down-12"
@@ -1003,7 +1043,12 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(12, 'over')" onmouseout="dropdownTextHighlight(12, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(12, 'over')"
+                    onmouseout="dropdownTextHighlight(12, 'out')"
+                  >
                     A#/Bb
                   </text>
                 </g>
@@ -1012,7 +1057,8 @@
                   class="expand"
                   transform="translate(0 600)"
                   onClick="dropdownSelection('B',11)"
-                  onmouseover="dropdownTextHighlight(13, 'over')" onmouseout="dropdownTextHighlight(13, 'out')"
+                  onmouseover="dropdownTextHighlight(13, 'over')"
+                  onmouseout="dropdownTextHighlight(13, 'out')"
                 >
                   <path
                     id="drop-down-13"
@@ -1020,29 +1066,27 @@
                     d="M503.9,90H402.2c-1.7,0-3.2-1.4-3.2-3.2V39.2c0-1.7,1.4-3.2,3.2-3.2h101.7
               c1.7,0,3.2,1.4,3.2,3.2v47.7C507,88.6,505.6,90,503.9,90z"
                   />
-                  <text transform="matrix(1 0 0 1 411.3574 72)" class="st6 st7 st8" onmouseover="dropdownTextHighlight(13, 'over')" onmouseout="dropdownTextHighlight(13, 'out')">
+                  <text
+                    transform="matrix(1 0 0 1 411.3574 72)"
+                    class="st6 st7 st8"
+                    onmouseover="dropdownTextHighlight(13, 'over')"
+                    onmouseout="dropdownTextHighlight(13, 'out')"
+                  >
                     B
                   </text>
                 </g>
-
-
-
               </g>
 
-
-
               <text
-              transform="translate(565.483 177.996)"
-              class="st18_tab st19_tab st22_tab"
-            >
-              Chord Root
-            </text>
+                transform="translate(565.483 177.996)"
+                class="st18_tab st19_tab st22_tab"
+              >
+                Chord Root
+              </text>
             </g>
 
             <!-- chord selection labels -->
-            <g id="Layer_25_copy"  transform="translate(0 0)">
-
-
+            <g id="Layer_25_copy" transform="translate(0 0)">
               <linearGradient
                 id="SVGID_15tab_"
                 gradientUnits="userSpaceOnUse"
@@ -1140,7 +1184,6 @@
               >
                 Minor Chords
               </text>
-          
 
               <linearGradient
                 id="SVGID_18tab_"
@@ -1183,8 +1226,6 @@
               >
                 Augmented Chords
               </text>
-            
-            
 
               <linearGradient
                 id="SVGID_19tab_"
@@ -1227,7 +1268,6 @@
               >
                 Diminished Chords
               </text>
-            
 
               <linearGradient
                 id="SVGID_20tab_"
